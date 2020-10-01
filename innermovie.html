@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="content/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmmaker Portfolio  - Guilherme Caeiro - Work Gallery</title>
@@ -8,13 +9,15 @@
 </head>
 <body>
     <nav>
-        <!-- the nav hould be copied from the homepage -->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a class = "dropdownform" href="contact.html">Contact</a></li>
-        </ul>
+        <div class="dropdown">
+            <img onclick="myFunction()" class="dropbtn" src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/9961263041586786441-512.png">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">home</a>
+              <a href="gallery.html">gallery</a>
+              <a href="about.html">about</a>
+              <a href="contact.html">contact</a>
+            </div>
+          </div>  
     </nav>
     <main>
         <h2>
@@ -27,7 +30,7 @@
         <hr>
         <p>footer footer footer</p>
     </footer>
-    
+    <script src="content/script.js"></script>
 </body>
 </html>
 
