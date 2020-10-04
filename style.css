@@ -137,10 +137,12 @@ button {
 
 .workGal {
     text-align: center;
-    background-color: darkgray;
     display: flex;
     align-items: center;
     height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .galLink {
@@ -185,7 +187,12 @@ a {
 }
 
 #work1 {
-    background-image: url("pictures/AlexRapp.png");
+    background-image: url("content/pictures/AlexRapp.png");
+    /* background-repeat: no-repeat;
+    background-position: cover; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     
 }
 
