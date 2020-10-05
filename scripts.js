@@ -53,36 +53,28 @@ const picArray = [{
 function createGalleryElement(movieName, location, year, imageUrl) {
     const galLink = document.createElement("a");
     galLink.classList.add("galLink");
-    // console.log(galLink);
 
     const workGal = document.createElement("div");
     workGal.classList.add("workGal");
     workGal.setAttribute("id", movieName);
-    //console.log(workGal);
     galLink.appendChild(workGal);
-
     workGal.style.backgroundImage = `url(${imageUrl})`;
 
     const textInfo = document.createElement("div");
     textInfo.classList.add("textInfo");
     workGal.appendChild(textInfo);
-    
 
     const movieHeadline = document.createElement("h3");
     movieHeadline.innerHTML = movieName;
     const movieText = document.createElement("p");
     movieText.innerHTML = location + " - " + year;
     movieText.classList.add("descriptionHover");
-    console.log(movieText);
-    console.log(movieHeadline);
 
-    console.log(textInfo);
     textInfo.appendChild(movieHeadline);
     textInfo.appendChild(movieText);
 
 
     const workContainer = document.querySelector(".workContainer");
-    // console.log(workContainer);
     workContainer.appendChild(galLink);
 
 }
@@ -96,4 +88,9 @@ function buildGallery (array) {
 
 buildGallery(picArray);
 
-//createGalleryElement("lebil", "Berlin", "2020", "content/pictures/promo.jpg");
+const movieHover = document.querySelectorAll(".galLink");
+movieHover[0].addEventListener("mouseenter" function(event) {
+  const descriptionHover = movieHover[0].querySelector(".descriptionHover");
+  console.log(descriptionHover);
+  descriptionHover.style.display = "block";
+})
