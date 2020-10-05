@@ -53,7 +53,7 @@ const picArray = [{
 function createGalleryElement(movieName, location, year, imageUrl) {
     const galLink = document.createElement("a");
     galLink.classList.add("galLink");
-
+    
     const workGal = document.createElement("div");
     workGal.classList.add("workGal");
     workGal.setAttribute("id", movieName);
@@ -88,9 +88,15 @@ function buildGallery (array) {
 
 buildGallery(picArray);
 
-const movieHover = document.querySelectorAll(".galLink");
-movieHover[0].addEventListener("mouseenter" function(event) {
+
+
+const movieHover = document.querySelectorAll(".workGal");
+movieHover[0].addEventListener("mouseenter", function(event) {
   const descriptionHover = movieHover[0].querySelector(".descriptionHover");
-  console.log(descriptionHover);
   descriptionHover.style.display = "block";
+  
+});
+movieHover[0].addEventListener("mouseover", function(event) {
+  const descriptionHover = movieHover[0].querySelector(".descriptionHover");
+  descriptionHover.style.display = "none";
 })
