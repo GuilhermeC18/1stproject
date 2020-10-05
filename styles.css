@@ -1,0 +1,78 @@
+/* HOMEPAGE */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.homepage {
+  background-image: url("AlexRapp-final1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Jaldi", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-homepage {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  opacity: 75%;
+}
+
+.subtitle-homepage {
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+  opacity: 75%;
+}
+
+/* Arrow */
+
+.nextpagebutton {
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  right: 49.69%;
+  top: 88%;
+  bottom: 6.24%;
+  opacity: 60%;
+}
+
+/* others */
+
+.hambut {
+  display: none;
+}
+
+.callforaction {
+  display: none;
+}
+
+#homeworks {
+  display: none;
+}
+
+.homeContact {
+  display: none;
+}
+
+.footerflex {
+  display: none;
+}
+
+/* INNER MOVIE */
+
+.inner-movie {
+  background-color: black;
+  color: white;
+  font-family: "Jaldi", sans-serif;
+}
+
+#timeLocation {
+  opacity: 60%;
+}
