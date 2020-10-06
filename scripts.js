@@ -100,3 +100,16 @@ movieHover[0].addEventListener("mouseover", function(event) {
   const descriptionHover = movieHover[0].querySelector(".descriptionHover");
   descriptionHover.style.display = "none";
 })
+
+//
+//
+//
+//
+// navBar script:
+//
+//
+//
+//
+$('.icon').click(function(){
+  $('span').toggleClass("cancel");
+});
