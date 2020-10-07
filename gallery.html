@@ -3,76 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmmaker Portfolio  - Guilherme Caeiro - Work Gallery</title>
+    <title>Filmmaker Portfolio  - Guilherme Caeiro - Gallery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesNavBar.css">
+
 </head>
 <body>
     <nav>
-        <!-- the nav hould be copied from the homepage -->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a class = "dropdownform" href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <div class="logo">
+  Logo Here</div>
+  
+  <label for="btn" class="icon">
+          <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+  
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">contact</a></li>
+  
+  </ul>
+  </nav>
+
     <main>
-        <header>
-            <h2>Gallery</h2>
-        </header>
+
         <div class = "workContainer">
-            <a href="innermovie.html">
-                <div class = "workGal">
-                    <h3>project name 1</h3>
-                    <p class = "descriptionHover">2020 - Berlin, DE</p>
-                </div>
-            </a>
-            <div class = "workGal">
-                <h3>project name 2</h3>
-                <p class = "descriptionHover">2020 - Berlin, DE</p>
-            </div>
-            <div class = "workGal">
-                <h3>project name 3</h3>
-                <p class = "descriptionHover">2020 - Berlin, DE</p>
-            </div>
-            <div class = "workGal">
-                <h3>project name 4</h3>
-                <p class = "descriptionHover">2020 - Berlin, DE</p>
-            </div>
-            <div class = "workGal">
-                <h3>project name 5</h3>
-                <p class = "descriptionHover">2020 - Berlin, DE</p>
-            </div>
-            <div class = "workGal">
-                <h3>project name 6</h3>
-                <p class = "descriptionHover">2020 - Berlin, DE</p>
-            </div>
-            <div class = "workGal">
-                <h3>project name 7</h3>
-                <p class = "descriptionHover">2020 - Berlin, DE</p>
-            </div>
-            <div class = "workGal">
-                <h3>project name 8</h3>
-                <p class = "descriptionHover">2020 - Berlin, DE</p>
-            </div>
+
+                    <!-- <a class="galLink" href="innermovie.html">
+                        <div class="workGal" id="work1">
+                            <div class="textInfo">
+                                <h3>project name 1</h3>
+                                <p class = "descriptionHover">2020 - Berlin, DE</p>
+                            </div>
+                        </div>
+                    </a> -->
+
         </div>
+        <button class="lineButton">Go to Top</button>
     </main>
+
     <footer>
         <!-- will be added later -->
         <hr>
         <p>footer footer footer</p>
     </footer>
-    
+    <script src="scripts.js"></script>
 </body>
-<style>
-    /* will be moved to the css file */
-    .workGal {
-        width: 50%;
-        height: 400px;
-        background-color: darkgray;
-        text-align: center;
-        
-    }
-</style>
 </html>
+
 
