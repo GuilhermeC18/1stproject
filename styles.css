@@ -57,7 +57,7 @@ a {
 }
 
 .lineButton:hover {
-  background-color: #F9F9F9;
+  background-color: #f9f9f973;
   color: #000;
 }
 
@@ -76,6 +76,14 @@ button {
   display: block;
   cursor: pointer;
   outline: none; 
+}
+
+.upbutton {
+  position: fixed;
+  bottom: 16px;
+  left: 47.4%;
+  background-color: transparent;
+  padding: 16px 24px;
 }
 
 /* Contact form */
