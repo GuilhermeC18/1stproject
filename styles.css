@@ -4,6 +4,8 @@
 }
 
 body{
+  height: 100%;
+  width: 100%;
   background-color: #000;
   color: #F9F9F9;
   font-family: Montserrat;
@@ -35,12 +37,7 @@ a {
   color: #F9F9F9;
   text-decoration: none;
 }
-.contactText {
-  text-align: center;
-  margin:  8px 24px 24px 24px;
-  color: #C4C4C4;
-  
-}
+
 
 /* Buttons general style */
 
@@ -83,6 +80,13 @@ button {
 form {
   margin: 0 16px 0 16px;
 
+}
+
+.contactText {
+  text-align: center;
+  margin:  8px 24px 24px 24px;
+  color: #C4C4C4;
+  
 }
 
 label {
@@ -194,7 +198,7 @@ outline: none;
 
 /* #work1 {
   background-image: url("content/pictures/AlexRapp.png");
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: cover; 
   background-size: cover;
   background-repeat: no-repeat;
@@ -206,11 +210,6 @@ background-repeat: no-repeat;
 
 /* HOMEPAGE */
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
 
 .homepage {
   background-image: url("AlexRapp-final1.png");

@@ -2,57 +2,66 @@ const picArray = [{
     name: "Project one",
     location: "Berlin",
     year: "2020", 
-    picture: "content/pictures/AlexRapp.png"
+    picture: "content/pictures/AlexRapp.png",
+    page: "innermovie.html"
   },
   {
     name: "Project two",
     location: "Berlin",
     year: "2020", 
-    picture: "content/pictures/KazuMakino.png"
+    picture: "content/pictures/KazuMakino.png", 
+    page: "innermovie.html"
   },
   {
     name: "Project something",
     location: "Berlin",
     year: "2020", 
-    picture: "content/pictures/promo.jpg"
+    picture: "content/pictures/promo.jpg",
+    page: "innermovie.html"
   },
   {
     name: "Project lebil",
     location: "Berlin",
     year: "2020", 
-    picture: "content/pictures/pic1.png"
+    picture: "content/pictures/pic1.png",
+    page: "innermovie.html"
   },
   {
     name: "Project another something",
     location: "Berlin",
     year: "2020", 
-    picture: "content/pictures/Alex-2.png"
+    picture: "content/pictures/Alex-2.png",
+    page: "innermovie.html"
   },
   {
     name: "Project one",
     location: "Berlin",
     year: "2020", 
-    picture: "content/pictures/Atonal.jpg"
+    picture: "content/pictures/Atonal.jpg",
+    page: "innermovie.html"
   },
   {
     name: "Project one",
     location: "Berlin",
     year: "2020", 
-    picture: "content/pictures/KingMidasSound.jpg"
+    picture: "content/pictures/KingMidasSound.jpg",
+    page: "innermovie.html"
   },
   {
     name: "Project one",
     location: "Berlin",
     year: "2020", 
-    picture: "content/pictures/LocalSuicide-AlreadyThere.jpg"
+    picture: "content/pictures/LocalSuicide-AlreadyThere.jpg",
+    page: "innermovie.html"
   },
   
 ];
 
 
-function createGalleryElement(movieName, location, year, imageUrl) {
+function createGalleryElement(movieName, location, year, imageUrl, pageUrl) {
     const galLink = document.createElement("a");
     galLink.classList.add("galLink");
+    galLink.href = pageUrl;
     
     const workGal = document.createElement("div");
     workGal.classList.add("workGal");
@@ -81,7 +90,7 @@ function createGalleryElement(movieName, location, year, imageUrl) {
 
 function buildGallery (array) {
     for (let i = 0; i < picArray.length; i++) {
-        createGalleryElement(array[i].name, array[i].location, array[i].year, array[i].picture);
+        createGalleryElement(array[i].name, array[i].location, array[i].year, array[i].picture, array[i].page);
     }
 
 }
