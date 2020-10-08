@@ -347,3 +347,46 @@ outline: none;
   }
   
 }
+
+
+/* 
+//
+//
+footer styles :
+*/
+#idFooter {
+  background: url(https://thumbs.gfycat.com/SeriousLinedGoldenretriever.webp);
+  background-clip: content-box;
+  background-position: center;
+  background-size: auto;
+}
+
+
+/* 
+//
+//
+home page text sample :
+*/
+#idHomeText {
+  width: 70%;
+  min-width: 350px;
+  margin: auto;
+  text-align: left;
+  text-justify: newspaper;
+  text-align: justify;
+  padding: 1rem;
+}
+
+/* 
+//
+//
+fixed gap between gallery and nav :
+*/
+.mainGallery {
+margin-top: -16px;
+}
+
+
+hr {
+  display: none;
+}

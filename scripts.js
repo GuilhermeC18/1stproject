@@ -1,3 +1,15 @@
+//
+//
+// edit logo text :  
+//
+const paragraph = document.getElementById("idLogoText");
+paragraph.textContent += "Guilherme Caeiro";
+
+
+//
+//
+// please describe whatever is happeing in here: functions/arrays/objects.. etc 
+//
 const picArray = [{
     name: "Project one",
     location: "Berlin",
@@ -109,3 +121,55 @@ movieHover[0].addEventListener("mouseover", function(event) {
   const descriptionHover = movieHover[0].querySelector(".descriptionHover");
   descriptionHover.style.display = "none";
 })
+
+//
+//
+//
+//
+// navBar scripts:
+//
+//
+//
+//
+
+$('.icon').click(function(){
+  $('span').toggleClass("cancel");
+});
+
+
+//
+//
+
+/* InnerMovie - Slider */
+
+let slide_index = 1; //start on 1.
+displaySlides(slide_index); //
+function nextSlide(n) {
+  displaySlides((slide_index += n));
+}
+function currentSlide(n) {
+  displaySlides((slide_index = n));
+}
+function displaySlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("showSlide");
+  if (n > slides.length) {
+    slide_index = 1;
+  }
+  if (n < 1) {
+    slide_index = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slide_index - 1].style.display = "block";
+  console.log(slides[slide_index - 1].style.display);
+}
+
+//
+//
+//
+//
+// END OF innerMovie Slider scripts
+//
+//

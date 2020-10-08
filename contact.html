@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmmaker Portfolio  - Guilherme Caeiro - Homepage</title>
+    <title>Filmmaker Portfolio  - Guilherme Caeiro - Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesNavBar.css">
+
 </head>
 <body>
     <nav>
-        <!-- the nav hould be copied from the homepage -->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a class = "dropdownform" href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
+        <div class="logo">
+ </div>
+ <p id="idLogoText"></p>
+  <label for="btn" class="icon">
+          <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+  
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">contact</a></li>
+  
+  </ul>
+  </nav>
+<hr>
+  <main id="idMain">
         <h2>Contact Me</h2>
         <p class="contactText">If you are Interest to work with me please send me a message</p>
         <form>
@@ -46,12 +56,13 @@
             <!--<input class="lineButton" type="submit" value="Send Message">-->
         </form>
     </main>
-    
-    <footer>
+
+    <footer id="idFooter">
         <!-- will be added later -->
         <hr>
         <p>footer footer footer</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
 
