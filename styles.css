@@ -3,7 +3,111 @@
   padding: 0;
 }
 
+/* navigation style */
+
+nav{
+  background: #1b1b1b;
+  background: url(https://thumbs.gfycat.com/SeriousLinedGoldenretriever.webp);
+  background-clip: content-box;
+  background-position: center;
+  background-size: auto;
+}
+
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+nav .logo{
+  float: none;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: none;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: none;
+  margin: 0 5px;
+  text-transform: lowercase;
+  
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: gray;
+  border-radius: 5px;
+ 
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+
+nav ul ul ul{
+  border-top: none;
+}
+
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+
+.show,.icon,input{
+  display: none;
+}
+
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+/* general elements */
+
 body{
+  height: 100%;
+  width: 100%;
   background-color: #000;
   color: #F9F9F9;
   font-family: Montserrat;
@@ -35,12 +139,7 @@ a {
   color: #F9F9F9;
   text-decoration: none;
 }
-.contactText {
-  text-align: center;
-  margin:  8px 24px 24px 24px;
-  color: #C4C4C4;
-  
-}
+
 
 /* Buttons general style */
 
@@ -85,6 +184,13 @@ form {
 
 }
 
+.contactText {
+  text-align: center;
+  margin:  8px 24px 24px 24px;
+  color: #C4C4C4;
+  
+}
+
 label {
   font-family: Montserrat;
   font-size: 13px;
@@ -96,7 +202,8 @@ label {
 
 }
 
-input , select, textarea {
+form input , select, textarea {
+  display: inline-block;
   background-color: #000;
   color: #F9F9F9;
   font-family: 'Montserrat';
@@ -194,7 +301,7 @@ outline: none;
 
 /* #work1 {
   background-image: url("content/pictures/AlexRapp.png");
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: cover; 
   background-size: cover;
   background-repeat: no-repeat;
@@ -206,11 +313,6 @@ background-repeat: no-repeat;
 
 /* HOMEPAGE */
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
 
 .homepage {
   background-image: url("AlexRapp-final1.png");
@@ -283,7 +385,77 @@ body {
   opacity: 60%;
 }
 
+/* 
+//
+//
+footer styles :
+*/
+#idFooter {
+  background: url(https://thumbs.gfycat.com/SeriousLinedGoldenretriever.webp);
+  background-clip: content-box;
+  background-position: center;
+  background-size: auto;
+}
+
+
+/* 
+//
+//
+home page text sample :
+*/
+#idHomeText {
+  width: 70%;
+  min-width: 350px;
+  margin: auto;
+  text-align: left;
+  text-justify: newspaper;
+  text-align: justify;
+  padding: 1rem;
+}
+
+/* 
+//
+//
+fixed gap between gallery and nav :
+*/
+.mainGallery {
+margin-top: -16px;
+}
+
+
+hr {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  
+}
+
+/*  
+//
+//
+logo on all pages:
+*/
+#idLogoText {
+  float: right;
+  padding-right: 1.3rem;
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: white;
+
+}
+
+
+
 /* Responsive */
+
+/* mobile screen */
 
 @media only screen and (max-width: 767px) {
   .workGal {
@@ -296,6 +468,73 @@ body {
   .descriptionHover {
       display: inline;
   }
+
+  /* responsive navigation */
+
+  nav ul{
+    margin-right: 0px;
+    float: left; 
+    }
+
+    nav .logo{
+      padding-left: 30px;
+      width: 100%;
+      
+    }
+    .show + a, ul{
+      display: none;
+      
+    }
+    nav ul li,nav ul ul li{
+      display: block;
+      width: 100%;
+      
+    }
+    nav ul li a:hover{
+      box-shadow: none;
+    }
+    .show{
+      display: block;
+      color: white;
+      font-size: 18px;
+      padding: 0 20px;
+      line-height: 70px;
+      cursor: pointer;
+    }
+    .show:hover{
+      color: cyan;
+    }
+    .icon{
+      display: block;
+      color: white;
+      position: static;
+      top: 0;
+      line-height: 70px;
+      font-size: 25px;
+      margin-left: 20px;
+    }
+    nav ul ul{
+      top: 70px;
+      border-top: 0px;
+      float: none;
+      position: static;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    
+    [id^=btn]:checked + ul{
+      display: block;
+  
+    }
+    nav ul ul li{
+      border-bottom: 0px;
+    }
+  
+    nav ul li{
+      margin-top: -20px;
+    }
 }
 
 @media (min-width: 1281px) {
