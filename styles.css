@@ -6,7 +6,7 @@
 /* navigation style */
 
 nav{
-  background: #1b1b1b;
+  background-color: #000;
   background-clip: content-box;
   background-position: center;
   background-size: auto;
@@ -390,7 +390,6 @@ outline: none;
 footer styles :
 */
 #idFooter {
-  background: url(https://thumbs.gfycat.com/SeriousLinedGoldenretriever.webp);
   background-clip: content-box;
   background-position: center;
   background-size: auto;
