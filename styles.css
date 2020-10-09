@@ -59,6 +59,13 @@ a {
 .lineButton:hover {
   background-color: #f9f9f973;
   color: #000;
+  animation-name: lineButtonHover;
+  animation-duration: 0.3s;
+}
+
+@keyframes lineButtonHover {
+  from {background-color: transparent;}
+  to {background-color: #f9f9f973;}
 }
 
 button {
@@ -84,6 +91,7 @@ button {
   left: 47.4%;
   background-color: transparent;
   padding: 16px 24px;
+  
 }
 
 /* Contact form */
@@ -186,30 +194,13 @@ outline: none;
   margin: auto;
 }
 
-
-
-.descriptionHover {
-  display: none;
+ .descriptionHover {
+  color: transparent;
 }
 
-.descriptionHover:hover {
-  display: inline;
-
-}
 .projectInfo {
   margin: auto;
 }
-
-/* #work1 {
-  background-image: url("content/pictures/AlexRapp.png");
-background-repeat: no-repeat;
-  background-position: cover; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  
-} */
-
 
 
 /* HOMEPAGE */

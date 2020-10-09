@@ -95,9 +95,20 @@ function createGalleryElement(movieName, location, year, imageUrl) {
 // function that gets an object of all the projects and biulds a gallery item for every one
 
 function buildGallery (array) {
-    for (let i = 0; i < picArray.length; i++) {
-        createGalleryElement(array[i].name, array[i].location, array[i].year, array[i].picture);
-    }
+  for (let i = 0; i < picArray.length; i++) {
+    createGalleryElement(array[i].name, array[i].location, array[i].year, array[i].picture);
+
+    // hovers in gallery ---- not finished
+    const movieHover = document.querySelectorAll(".workGal");
+    movieHover[i].addEventListener("mouseenter", function(event) {
+      const descriptionHover = movieHover[i].querySelector(".descriptionHover");
+      descriptionHover.style.color = "#F9F9F9";
+    });
+    movieHover[i].addEventListener("mouseleave", function(event) {
+      const descriptionHover = movieHover[i].querySelector(".descriptionHover");
+      descriptionHover.style.color = "transparent";
+    })
+  }
 
 }
 
@@ -109,13 +120,15 @@ buildGallery(picArray);
 const movieHover = document.querySelectorAll(".workGal");
 movieHover[0].addEventListener("mouseenter", function(event) {
   const descriptionHover = movieHover[0].querySelector(".descriptionHover");
-  descriptionHover.style.display = "block";
+  descriptionHover.style.color = "#F9F9F9";
   
 });
-movieHover[0].addEventListener("mouseover", function(event) {
+movieHover[0].addEventListener("mouseleave", function(event) {
   const descriptionHover = movieHover[0].querySelector(".descriptionHover");
-  descriptionHover.style.display = "none";
+  descriptionHover.style.color = "transparent";
 })
+
+// up button in gallery
 
 const upbutton = document.querySelector(".upbutton");
 console.log(upbutton);
