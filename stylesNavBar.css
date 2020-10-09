@@ -147,8 +147,12 @@ nav {
   text-align: center;
   display: flex;
   float: left;
+ 
 }
 
+  nav ul li a:hover{
+    box-shadow: none;
+  }
   
   .icon{
     display: block;
