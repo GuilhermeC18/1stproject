@@ -8,9 +8,8 @@
 }
 
 nav{
-  background: #1b1b1b;
+  background-color: black;
   font-family: Poppins;
-  background: url(https://thumbs.gfycat.com/SeriousLinedGoldenretriever.webp);
   background-clip: content-box;
   background-position: center;
   background-size: auto;
@@ -108,7 +107,7 @@ logo on all pages:
   float: right;
   padding-right: 1.3rem;
   padding-top: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bolder;
   color: white;
 
@@ -122,39 +121,39 @@ logo on all pages:
 responsive part:
 */
 @media all and (max-width: 700px) {
-  nav ul{
-    margin-right: 0px;
-    float: left;
-    
-  }
-  nav .logo{
-    padding-left: 30px;
-    width: 100%;
-    
-  }
+  
+
   .show + a, ul{
     display: none;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
     
   }
-  nav ul li,nav ul ul li{
-    display: block;
-    width: 100%;
-    
+
+nav {
+  background-color: black;
   }
+
+  nav ul{
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  }
+
+  nav ul li{
+  clear:both;
+  padding: 0rem 1rem;
+  text-align: center;
+  display: flex;
+  float: left;
+ 
+}
+
   nav ul li a:hover{
     box-shadow: none;
   }
-  .show{
-    display: block;
-    color: white;
-    font-size: 18px;
-    padding: 0 20px;
-    line-height: 70px;
-    cursor: pointer;
-  }
-  .show:hover{
-    color: cyan;
-  }
+  
   .icon{
     display: block;
     color: white;
@@ -163,29 +162,20 @@ responsive part:
     line-height: 70px;
     font-size: 25px;
     margin-left: 20px;
+    
   }
-  nav ul ul{
-    top: 70px;
-    border-top: 0px;
-    float: none;
-    position: static;
-    display: none;
-    opacity: 1;
-    visibility: visible;
-  }
-
   
   [id^=btn]:checked + ul{
     display: block;
 
   }
-  nav ul ul li{
-    border-bottom: 0px;
-  }
 
   nav ul li{
-    margin-top: -20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 60px;
   }
+  
   
 }
 

@@ -587,3 +587,43 @@ logo on all pages:
   }
   
 }
+
+
+/* 
+//
+//
+footer styles :
+*/
+#idFooter {
+  
+}
+
+
+/* 
+//
+//
+home page text sample :
+*/
+#idHomeText {
+  width: 70%;
+  min-width: 350px;
+  margin: auto;
+  text-align: left;
+  text-justify: newspaper;
+  text-align: justify;
+  padding: 1rem;
+}
+
+/* 
+//
+//
+fixed gap between gallery and nav :
+*/
+.mainGallery {
+margin-top: -16px;
+}
+
+
+hr {
+  display: none;
+}
