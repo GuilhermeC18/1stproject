@@ -69,6 +69,7 @@ const picArray = [{
   
 ];
 
+// function that gets ptoject details and builds a gallery item
 
 function createGalleryElement(movieName, location, year, imageUrl, pageUrl) {
     const galLink = document.createElement("a");
@@ -100,27 +101,64 @@ function createGalleryElement(movieName, location, year, imageUrl, pageUrl) {
 
 }
 
-function buildGallery (array) {
-    for (let i = 0; i < picArray.length; i++) {
-        createGalleryElement(array[i].name, array[i].location, array[i].year, array[i].picture, array[i].page);
-    }
+// function that gets an object of all the projects and biulds a gallery item for every one
 
+function buildGallery (array) {
+  for (let i = 0; i < picArray.length; i++) {
+    createGalleryElement(array[i].name, array[i].location, array[i].year, array[i].picture);
+
+    // hovers in gallery ---- not finished
+    const movieHover = document.querySelectorAll(".workGal");
+    movieHover[i].addEventListener("mouseenter", function(event) {
+      const descriptionHover = movieHover[i].querySelector(".descriptionHover");
+      descriptionHover.style.color = "#F9F9F9";
+    });
+    movieHover[i].addEventListener("mouseleave", function(event) {
+      const descriptionHover = movieHover[i].querySelector(".descriptionHover");
+      descriptionHover.style.color = "transparent";
+    })
+  }
 }
 
+// gallery build
 buildGallery(picArray);
 
 
-
+// hovers in gallery ---- not finished
 const movieHover = document.querySelectorAll(".workGal");
 movieHover[0].addEventListener("mouseenter", function(event) {
   const descriptionHover = movieHover[0].querySelector(".descriptionHover");
-  descriptionHover.style.display = "block";
+  descriptionHover.style.color = "#F9F9F9";
   
 });
-movieHover[0].addEventListener("mouseover", function(event) {
+movieHover[0].addEventListener("mouseleave", function(event) {
   const descriptionHover = movieHover[0].querySelector(".descriptionHover");
-  descriptionHover.style.display = "none";
+  descriptionHover.style.color = "transparent";
 })
+
+// up button in gallery
+
+const upbutton = document.querySelector(".upbutton");
+console.log(upbutton);
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    upbutton.style.display = "block";
+  } else {
+    upbutton.style.display = "none";
+  }
+}
+
+upbutton.addEventListener("click", topFunction);
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 //
 //
